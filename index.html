@@ -11,15 +11,19 @@
             <button  id="valider" name ="valider">Valider</button>
         </form>
         <script>
+//Récupération de l'input
         var a = document.getElementById("premier_nombre");
         var b = document.getElementById("deuxieme_nombre");
+//Récupération du bouton
         var button = document.getElementById("valider");
+//Création de l'événement suivie de la fonction
         button.addEventListener("click",function(){
           if (!parseInt(a.value) || !parseInt(b.value)){
             alert ("error");
           }
           else {
         var result = parseInt(a.value)*b.value;
+//Affichage de l'alerte
         alert(result);
         }
         });
